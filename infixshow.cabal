@@ -48,7 +48,7 @@ Library
   Exposed-modules:     Text.Show.Infix
   
   -- Packages needed in order to build this package.
-  -- Build-depends:       
+  Build-depends:       base
   
   -- Modules not exported by this package.
   -- Other-modules:       
