@@ -10,7 +10,7 @@ Name:                infixshow
 Version:             0.1
 
 -- A short (one-line) description of the package.
-Synopsis:            non-verbose operaters for string generating strings
+Synopsis:            non-verbose operators for string generation
 
 -- A longer description of the package.
 -- Description:         
