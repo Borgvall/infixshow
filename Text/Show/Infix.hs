@@ -1,4 +1,4 @@
-module Infix where
+module Text.Show.Infix where
 
 infixr 5 >+, +<
 (>+) :: Show a => a -> ShowS
