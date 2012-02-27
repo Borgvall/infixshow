@@ -13,7 +13,12 @@ Version:             0.1
 Synopsis:            non-verbose operators for string generation
 
 -- A longer description of the package.
--- Description:         
+Description:         
+  Generating strings from data in Haskell usually requires a combination of
+  the show, shows functions and the string concatenation '++' operator. Such
+  code tends to be verbose and cumbersome. This package provides some infix
+  operators, that behaves like ++, but additionally convert one operand into
+  strings. They allow writing concise code for string generation.
 
 -- The license under which the package is released.
 License:             BSD3
