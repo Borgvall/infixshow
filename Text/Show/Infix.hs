@@ -4,23 +4,31 @@
 -- strings. This module provides some »cousins« of Haskell's concatenating
 -- operator '++', which resemble some meanings of Java's special '+'. They
 -- have the same precedence and associativity as '++'.
-
--- TODO: Why returns Haddock an error on this paragraph?
 --
 -- In order to use them you may start by writing code assuming '++' works like
 -- '+' in Java:
+--
 -- > 12 ++ " + " ++ 3 ++ " = " ++ (12+3) -- error
+-- 
 -- It does not type check. At first replace all '++' with '>+', where the left
 -- hand side needs to be transformed into a 'String'.
+-- 
 -- > 12 >+ " + " ++ 3 >+ " = " ++ (12+3) -- error
+-- 
 -- Still does not work, because (12+3) has to be transformed as well. But '>+'
 -- could not be used, so lets use '+<'.
+-- 
 -- > 12 >+ " + " ++ 3 >+ " = " +< (12+3) -- results to "12 + 3 = 15"
+-- 
 -- Please note that '++', '>+' and '+<' are right associative. This means '+<'
 -- may not work as you might expect:
+-- 
 -- > 12 >+ " + " +< 3 ++ " = " +< (12+3) -- error
+-- 
 -- is equivalent to
+-- 
 -- > 12 >+ " + " +< (3 ++ " = " +< (12+3)) -- error
+-- 
 -- with the parentheses you should spot the error.
 -- 
 -- Further examples:
