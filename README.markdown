@@ -7,14 +7,18 @@ Installation and Usage
 ======================
 
 infixshow uses Cabal [2] for distribution and can be installed with the command
+
 	cabal install
+
 inside the directory of the unzipped archive. Afterwards the 'Text.Show.Infix' module could be imported and used.
 
 Documentation
 =============
 
 The code of infixshow contains Haddock [3] annotations. The command 
-	cabal haddock
+
+cabal haddock
+
 produces the html documentation in the directory dist/doc. At the beginning you should read the documentation of the 'Text.Show.Infix' module.
 
 Resources
